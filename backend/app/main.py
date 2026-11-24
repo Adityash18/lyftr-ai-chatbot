@@ -15,10 +15,18 @@ from litellm import Cache
 
 
 # Configuration
+
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./app.db")
-DB_PATH = DATABASE_URL.replace("sqlite:////", "/", 1).replace(
-    "sqlite:///", "", 1
-)
+
+if os.getenv("VERCEL"):
+    DB_PATH = "/tmp/lyftr_app.db"
+else:
+    DB_PATH = DATABASE_URL.replace("sqlite:////", "/", 1).replace(
+        "sqlite:///", "", 1
+    )
+
+os.makedirs(os.path.dirname(DB_PATH) or ".", exist_ok=True)
+
 
 LLM_API_KEYS = [
     key.strip()
