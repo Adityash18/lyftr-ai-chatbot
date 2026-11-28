@@ -94,7 +94,7 @@ function App() {
         <div className="brand">
           <div className="brand-mark">✦</div>
           <div>
-            <strong>lyftr<span>.ai</span></strong>
+            <strong>Relay<span>AI</span></strong>
             <small>Intelligent conversations</small>
           </div>
         </div>
@@ -225,7 +225,7 @@ function App() {
                   send()
                 }
               }}
-              placeholder="Message Lyftr AI..."
+              placeholder="Message RelayAI..."
               rows="1"
             />
 
