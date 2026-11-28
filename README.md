@@ -1,6 +1,4 @@
-# Lyftr AI — Full-Stack LLM Chatbot
-
-A React + FastAPI chatbot with multi-turn SQLite history, LiteLLM integration, multi-key failover, response caching, request metadata, Docker Compose and a failure-simulation hook.
+# RelayAI – Full-Stack LLM Chatbot with Automated Key Failover and Response Caching 
 
 ## 1. Live URLs
 
